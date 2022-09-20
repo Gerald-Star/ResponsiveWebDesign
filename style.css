@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style the header*/
+header{
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+
+/* stylying the flexboxes*/
+
+#container{
+    display: flex;
+}
+
+/*style the nav menu */
+nav {
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+    height: 1000px;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/*style the content */
+
+#article_flex{
+   
+    padding: 10px;
+}
+
+/* styling the footer */
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* responsive layout */
+ 
+@media (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+}
+
+
+
+/* styling float */
+
+
+/* nav */
+
+#nav_link {
+    float: left;
+    width: 10%;
+   
+    background: #ccc;
+    padding: 20px;
+
+}
+
+#nav_link ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+/* clears float after the columns */
+
+.article_float {
+    float: left;
+    padding: 20px;
+    width: 60%;
+    height: 500px;
+    background-color: aliceblue;
+
+}
+
+#box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media(max-width: 600px) {
+    #nav_link, .article_float{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* Styling the Blog */
+#banner_text {
+    font-size: 5vw;
+    padding: 10px 0;
+    background-color: aqua;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 23%;
+}
+
+#text_1{
+    font-size: 3vw;
+}
+
+#banner {
+    background-color: #ccc;
+    color: black;
+    padding: 15px;
+}
+
+#overflow {
+    overflow: auto;
+   
+}
+
+
+.menu {
+    float: left;
+    width: 20%;
+}
+
+.topic_item {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.main{
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.right{
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+
+/* responsive web design*/
+
+@media only screen and (max-width: 800px){
+    /* For Tablets */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+    .right {
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    /* for mobile phones*/
+    .menu, .main, .right {
+        width: 100%;
+    }
+}
