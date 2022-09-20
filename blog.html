@@ -10,6 +10,8 @@
 <body>
 
     <header id="banner">
+
+       
         <h1 id="banner_text">Triva Waves Media</h1>
         <h3 id="text_1">The best tech and lifestyle Blog</h3>
     </header>
@@ -21,35 +23,175 @@
             <div class="topic_item">Mobility</div>
             <div class="topic_item">Gallery</div>
             <div class="topic_item">The Walk</div>
+            <br> <br>
 
-        </div>
+            <div id="login">
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Register</legend>
+                        <label for="fname">Username:Email</label><br>
+                        <input type="text" id="fname" name="fname" value="username"><br>
+                        <br>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd" value="pwd">
+                        <br> <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </fieldset>
+                    
+                </form>
+            </div> <br>
+
+            <div>
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Choose Topics:</legend>
+                        <input list="topics" name="topics">
+                        <datalist id="topics">
+                            <option value="Fintect">
+                            <option value="Mobility">
+                            <option value="Internet of Things">
+                            <option value="Platforms">
+                            <option value="Health Lifestyle"></option>
+                            <option value="Fashion Lifestyle"></option>
+                        </datalist>
+                        <br> 
+                        <input type="Submit">
+                    </fieldset>
+
+                </form>
+            </div>
+           
+
+        </div> 
+         
+       
 
         <div class="main">
-            <h2>History</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore similique impedit voluptatem ipsum sint? Provident perferendis explicabo reiciendis optio doloremque impedit laudantium maiores ipsa? Velit nobis aperiam unde placeat corrupti.</p>
-            <img src="images/berlin.jpg" alt="Berlin" style="width:400px; height:250px;">
+            <h2>BREAKING NEWS | NDLEA: Makes largest cocain seizure in Nigeria</h2>
+            <p>
+                According to <a href="https://dailypost.ng/2022/09/19/ndlea-busts-cocaine-worth-278m-in-lagos-highest-in-nigerias-history/" target="_blank">Daily Post</a>
+                
+                , a Nigeira local newspaper, on monday 19th september 2022. The Nigeria drug agency <strong>NDLEA</strong>
+              
+                bursted a cocain drug carter that worths about 1.8tons (1,855 kilograms) of the illicit drug, worth more than $278, 250,000, according to spokesman Femi Babafemi were recovered.
+            </p> <br>
+            <p>
+                This seizure is the largest in the history of the country in illicit drug recovery.
+            </p>
+                
+            
+            <figure>
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/QptW86h8uWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>NDLEA Nigeria| Seizure of Cocain worth <span>&euro;</span>193B. </figcaption>
+            </figure>
+
+
+            <p id="border_image">
+                <h2>Fintech |</h2>
+                
+                    <img id="img_float_right" src="images/fintech_1.jpg" alt="fintech" style="width:170px;height:170px;margin-left:15px;">
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                nulla et dictum interdum, nisi lorem egestas odio, 
+                vitae scelerisque enim ligula venenatis dolor. Maecenas 
+                nisl est, ultrices nec congue eget, auctor vitae massa.
+                 Fusce luctus vestibulum augue ut aliquet. Mauris ante 
+                 ligula, facilisis sed ornare eu, lobortis in odio.
+            </p>
+
+            <br> <br> <hr>
+
+            <div class="topic_item">
+                <h2>Internet of Things | <span>IoT</span></h2>
+                <p>
+                    <img id="img_float_left" src="images/Mobility.jpg" alt="Mobility" style="width:170px;height:170px;margin-right:15px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa
+    
+                </p>
+            </div> <hr> <br> <br>
+
+
+            <!--Travel and Tourist Lifestyle-->
+            <div class="clearfix">
+                <h2>Tourism Cities | <span>Lifestyle</span></h2>
+                <div class="box" style="background-color:#bbb">
+                <p>Some text inside the box.</p>
+                </div>
+
+                <div class="box" style="background-color:#ccc">
+                <p>Some text inside the box.</p>
+                </div>
+                
+                <div class="box" style="background-color:#ddd">
+                <p>Some text inside the box.</p>
+                </div>
+              </div>
+
+              <p><strong>Amazing cities</strong> tourism destiantion centers to 
+                enjoy the nature. we use the clearfix hack to take care of the layout flow. 
+                We also use the box-sizing property to make 
+
+            <!--Travel Lifestyle Hamburg-->
+            <div id="border" class="clearfix">
+
+                <h2>Hamburg | <span>Lifestyle</span></h2>
+                <img class="img2" src="images/hamburg.jpg" alt="hamburg" width="170" height="170">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit vero animi ut exercitationem pariatur iusto explicabo ab cumque, iste laborum recusandae sapiente aliquid. Esse velit iusto pariatur quam itaque vitae?</p>
+            </div>
+                
         </div>
+            <br> <br>
 
         <div class="right">
-            <h2>What</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi autem et consequuntur dolorum ullam necessitatibus accusamus error deserunt, fugit, officia nulla porro laborum delectus provident explicabo facere nesciunt voluptas.</p>
+            <h2>What <span>&#128517;</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur ur dolorum ullam necessitatibus accusamus error deserunt, fugit, officia nulla porro laborum delectus provident explicabo facere nesciunt voluptas.</p>
             
-            <h2>Where?</h2>
+            <h2>Where? <span>&#128514;</span></h2>
             <p>Lorem ipsum dolor elit. Fugit ullam, inventore sint voluptatibus iste odio repudiandae rerum distinctio accusamus asperiores et</p>
             
-            <h2>Price</h2>
+            <h2>Price <span>&#128511;</span></h2>
             <p>The Experience is free!</p>
         
         </div>
-   </section>
+    </section>
 
 
-   <section>
+    <!--  Article and Aside--> 
+    
+    <article class="all-browsers">
+        <h1>Most Popular Topics <span>&#128151;</span></h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
 
-   </section>
+        <aside>
+            <p id="aside_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Hic et quo vitae ipsam, sapiente commodi dolores quidem 
+                similique tempore nostrum assumenda libero deserunt 
+                excepturi magnam error recusandae, obcaecati, iusto 
+                accusamus!</p>
+        </aside>
 
-   <footer>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in repudiandae qui iste obcaecati, officiis iure eaque fugiat assumenda magnam enim! Fuga quisquam sequi quod natus omnis neque nesciunt officia?</p>
+        <article class="browser">
+            <h2>Mozilla Firefox <span>&#128516;</span></h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        
+        <article class="browser">
+            <h2>Microsoft Edge <span>&#128512;</span></h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </article> 
+
+    <br>
+
+
+   <footer id="footer_page">
+    <p>copyright Trivia Waves Media &reg;</p> 
+    <p>Registered Trademark TW Media &reg;</p>
+    <p>&trade;</p>
    </footer>
     
 </body>
