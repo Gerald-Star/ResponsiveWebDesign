@@ -225,6 +225,13 @@ hr {
     display: table;
   }
 
+  /* img container */
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+ }
+
 /* Travel and Tourist Lifestyle*/
 
 .box {
